@@ -1,0 +1,174 @@
+@import "vars"
+
+.works-section
+  padding-top: 80px
+
+  .works-content-block
+    display: flex
+    flex-direction: column
+
+    .content-title
+      margin-bottom: 55px !important
+
+    .works-content-descript
+      font-size: 17px
+      width: 510px
+      margin: 0
+
+    .work-present-block
+      margin-top: 60px
+      background-color: #fff
+      border-radius: 6px
+      box-shadow: 0 2px 18px 2px rgba(142, 142, 142, 0.2)
+      display: flex
+      flex-direction: column
+
+      .work-arrows-block
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        padding: 20px
+        box-shadow: 0 4px 5px 0 rgba(120, 120, 120, 0.25)
+
+        .work-switch-arrows-wrapper
+          display: flex
+          flex-direction: row
+          align-items: center
+
+          .work-switch-arrows
+            display: flex
+            flex-direction: row
+
+            .work-arrow-circle
+              border-radius: 100%
+              width: 30px
+              height: 30px
+              display: flex
+              justify-content: center
+              align-items: center
+              background-color: rgba(130, 194, 213, 0.3)
+              border: 1px solid transparent
+
+              &:first-of-type
+                margin-right: 6px
+
+              .work-arrow-icon
+                font-size: 13px
+                color: #94bfe6
+
+              &:hover
+                border: 1px solid rgba(130, 194, 213, 0.6)
+                cursor: pointer
+
+          .work-number
+            font-family: 'Open Sans', sans-serif
+            color: #82abd1
+            font-size: 14px
+            font-weight: 600
+            margin: 0 15px
+
+        .work-name
+          font-family: 'Open Sans', sans-serif
+          color: #82abd1
+          font-size: 14px
+          font-weight: 400
+
+      .work-images-block
+        display: flex
+        flex-direction: row
+        margin-top: 30px
+        padding: 20px 30px 40px
+
+        .work-image-wrapper
+          display: flex
+          flex-grow: 1
+
+          .work-image
+            width: 500px
+            height: 267px
+            border-radius: 5px
+            background-size: cover
+            box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.2)
+
+        .work-descript-block
+          display: flex
+          flex-direction: column
+          flex-grow: 1
+          padding: 15px 0 25px 30px
+
+          .work-images-switcher-block
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+
+            .images-switcher-arrow-wrapper
+              height: 30px
+              width: 30px
+              display: flex
+              justify-content: center
+              align-items: center
+
+              &:hover
+                cursor: pointer
+                .images-switcher-arrow
+                  color: $lightText
+
+              .images-switcher-arrow
+                font-size: 18px
+                color: $darkText
+
+            #images-switcher-active-image
+              margin: 0 15px
+              width: 60px
+              height: 40px
+              border-radius: 6px
+              box-shadow: 0 0 0 3px rgba(155, 225, 190, 0.65)
+              background-size: cover
+              &:hover
+                cursor: pointer
+
+            #images-switcher-inactive-image
+              margin-right: 15px
+              width: 50px
+              height: 30px
+              border-radius: 6px
+              border: 1px solid #d4d4d4
+              background-size: cover
+              &:hover
+                cursor: pointer
+
+          .work-text-block
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-top: 40px
+
+            .work-text-icon
+              height: 21px
+              margin-bottom: 5px
+
+            .work-text-name
+              font-family: 'Open Sans', sans-serif
+              font-weight: 600
+              color: $darkText
+              font-size: 15px
+              text-transform: uppercase
+              text-align: center
+              margin-top: 0
+              margin-bottom: 20px
+              width: 160px
+
+            .work-text-article
+              font-family: 'Open Sans', sans-serif
+              color: $lightText
+              font-size: 14px
+              font-weight: 400
+              margin-top: 0
+
+
+
+
+
+

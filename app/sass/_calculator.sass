@@ -1,0 +1,348 @@
+@import "vars"
+
+.calc-content-block
+  padding-top: 150px
+
+  .calc-offers-block
+    font-family: 'Roboto', sans-serif
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    height: 520px
+
+    .calc-offer-wrapper
+      display: flex
+      position: relative
+      flex-direction: column
+      width: 275px
+      height: 460px
+      box-shadow: 0 0 0 rgba(50, 50, 50, 0)
+      transition: height $offerWrapperDelay ease-out, box-shadow $offerWrapperDelay ease-out
+
+      &:hover
+        z-index: 5
+        height: 500px
+
+        .calc-offer-btn
+          opacity: 1 !important
+
+      .calc-offer-title-block
+        //height: 85px
+        padding: 25px
+
+        .calc-offer-title
+          margin: 0
+          font-weight: 500
+          font-size: 20px
+          color: rgba(255, 255, 255, 0.7)
+          text-transform: uppercase
+
+      .calc-offer-text-block
+        display: flex
+        flex-direction: column
+        padding: 25px 25px 0
+
+        p.calc-offer-article
+          margin-top: 0
+          margin-bottom: 30px
+          font-size: 15px
+          font-weight: 400
+          color: rgba(255, 255, 255, 0.7)
+          //transition: margin-bottom 0.1s linear
+
+      ol.calc-offer-options-list
+        margin: 0
+        padding-bottom: 10px
+
+        .calc-offer-option
+          color: #fff
+          font-size: 15px
+          font-weight: 400
+          margin-bottom: 5px
+
+
+      //The white button is also here
+      .calc-offer-price-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-end
+        flex-grow: 1
+        padding-bottom: 25px
+
+        .calc-offer-price
+          position: relative
+          font-weight: 500
+          font-size: 28px
+          color: #fff
+          transition: top 0.3s linear
+
+        .calc-offer-btn
+          opacity: 0
+
+
+    #landing-offer-wrapper
+      background-color: $mainBlue
+      border-radius: 8px 0 0 8px
+
+      .calc-offer-title-block
+        border-radius: 8px 0 0 8px
+        background-color: #5c87d0
+
+      .calc-offer-price
+        top: 45px
+
+      &:hover
+        box-shadow: 3px 0 10px 1px rgba(141, 178, 230, 0.9)
+        .calc-offer-price
+            top: -10px
+
+    #business-offer-wrapper
+      background-color: #13cb94
+      border-radius: 8px 8px 0 0
+
+      &:hover
+        box-shadow: -3px 0 10px 1px rgba(67, 204, 146, 0.9)
+        .calc-offer-article
+          margin-bottom: 20px
+
+        .calc-offer-price
+          top: -10px
+
+      .calc-offer-title-block
+        border-radius: 0 8px 8px 0
+        background-color: #12b886
+
+      .calc-offer-price
+        top: 0
+
+  p.calc-descript-article
+    width: 500px
+    font-size: 16px
+    margin: 100px 0 80px
+
+
+  //______________ CALCULATOR ITSELF ______________
+
+  .calc-calc-wrapper
+    display: flex
+    flex-direction: column
+    border-radius: 6px
+    background: rgb(107,144,229)
+    background: linear-gradient(90deg, rgba(107,144,229,1) 25%, rgba(160,89,222,1) 100%)
+
+    .calc-calc-icon-block
+      display: flex
+      flex-direction: row
+      justify-content: center
+
+      .calc-calc-icon-circle
+        position: relative
+        bottom: 27px
+        border-radius: 100%
+        height: 55px
+        width: 55px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #fff
+        box-shadow: 0 1px 5px 0 rgba(101, 101, 101, 0.4)
+
+        .calc-calc-icon
+          color: $lightText
+          font-size: 24px
+
+    .calc-calc-options-block
+      display: flex
+      flex-direction: row
+      padding: 0 25px
+      height: $calcOptionsBoxHeight
+
+      .calc-calc-options-box
+        display: flex
+        flex-direction: column
+        padding: 16px
+        margin-bottom: 20px
+        background-color: rgba(249, 249, 249, 0.15)
+        border-radius: 6px
+
+        &#calc-first-options-box
+          flex-grow: 1
+        &#calc-second-options-box
+          flex-grow: 2
+          margin: 0
+        &#calc-third-options-box
+          flex-grow: 1
+
+        .calc-calc-options-title
+          color: #fff
+          font-family: 'Roboto', sans-serif
+          font-size: 15px
+          font-weight: 600
+          margin: 0 0 15px
+
+        ul.calc-calc-options-list
+          margin: 0
+          padding: 0 0 0 30px
+
+          li.calc-calc-option
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin: 0 0 8px
+            color: #fff
+            font-family: 'Roboto', sans-serif
+            font-size: 15px
+            font-weight: 300
+
+            &:hover
+              cursor: pointer
+
+            span.calc-calc-radio
+              height: 8px
+              width: 8px
+              border-radius: 100%
+              border: 2px solid #fff
+              margin-right: 10px
+
+              &.active-radio
+                background-color: #fff
+                box-shadow: inset 0 0 4px 0 $mainBlue
+
+            span.calc-calc-checkbox
+              display: flex
+              justify-content: center
+              align-items: center
+              border-radius: 3px
+              border: 2px solid #fff
+              height: 10px
+              width: 10px
+              margin-right: 10px
+
+              .calc-check
+                display: none
+                color: $mainBlue
+                font-size: 8px
+
+              &.checked
+                background-color: #fff
+                .calc-check
+                  display: block
+
+            .calc-calc-option-text
+              width: 85%
+
+            .calc-calc-optionset-wrapper
+              display: flex
+              margin-right: 10px
+              flex-direction: row
+              align-items: center
+              padding: 3px 6px
+              border-radius: 4px
+              background-color: #fff
+              position: relative
+
+              span.calc-calc-optionset-text
+                font-size: 13px
+                font-weight: 300
+                color: $mainBlue
+
+              .optionset-arrow
+                font-size: 11px
+                color: $mainBlue
+                margin-left: 6px
+                position: relative
+                top: 0
+                transition: top 0.15s linear
+
+              ul.calc-calc-optionset-list
+                display: none
+                margin: 0
+                position: absolute
+                z-index: 10
+                top: 28px
+                min-width: 80px
+                left: 0
+                background-color: #fff
+                padding: 15px 10px
+                border-radius: 5px
+                box-shadow: 0 1px 7px 0 rgba(101, 101, 101, 0.3)
+
+                li.optionset-list-option
+                  margin-bottom: 10px
+                  border-bottom: 1px solid #e0e0e0
+                  color: $lightText
+                  font-size: 14px
+                  font-weight: 400
+
+                  &:hover
+                    cursor: pointer
+                    color: $mainBlue
+                    border-bottom: 1px solid $mainBlue
+
+              &.opened
+                ul.calc-calc-optionset-list
+                  display: block
+                .optionset-arrow
+                  top: 3px
+
+
+      //Options boxes are inside the left-right sides.
+
+      .calc-calc-options-side
+        display: flex
+        flex-grow: 1
+        flex-direction: column
+        height: 100%
+
+        &:nth-of-type(1)
+          padding-right: 13px
+        &:nth-of-type(2)
+          padding-left: 13px
+
+    .calc-calc-price-block
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      color: #fff
+      font-family: 'Roboto', sans-serif
+      padding: 20px 50px 0
+
+      .calc-calc-total-price-block
+        text-align: right
+        font-size: 16px
+        font-weight: 300
+        display: flex
+        flex-direction: row
+
+        .calc-calc-price
+          font-weight: 500
+          font-size: 30px
+          margin-left: 30px
+
+      .calc-calc-domain-price-block
+        display: flex
+        flex-direction: row
+        font-size: 16px
+        font-weight: 300
+        margin-top: 10px
+        justify-content: flex-end
+
+        .calc-calc-domain-price
+          padding: 0 10px 0 3px
+          font-weight: 400
+          font-size: 18px
+
+
+    .calc-calc-btn-block
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      padding: 0 50px
+
+      .subtle-white-btn
+        position: relative
+        top: 25px
+
+

@@ -1,0 +1,190 @@
+@import "vars"
+
+
+// _______________ PLACEHOLDERS ___________
+
+::-webkit-input-placeholder
+  color: $lightText
+  font-family: 'Roboto', sans-serif
+
+::-moz-placeholder
+  color: $lightText
+  font-family: 'Roboto', sans-serif
+
+textarea:-moz-placeholder, input:-moz-placeholder
+  color: $lightText
+  font-family: 'Roboto', sans-serif
+
+input:-ms-input-placeholder
+  color: $lightText
+  font-family: 'Roboto', sans-serif
+
+::-ms-input-placeholder
+  color: $lightText
+  font-family: 'Roboto', sans-serif
+
+// ______________ CONTENT _____________
+
+footer
+  margin-top: 100px !important
+  background: linear-gradient(90deg, rgba(104,213,195,1) 20%, rgba(78,196,215,1) 100%)
+  height: 525px
+
+  .footer-content-block
+    position: relative
+    height: 525px
+    display: flex
+    flex-direction: column
+
+    .footer-main-title
+      font-family: 'Roboto', sans-serif
+      font-size: 45px
+      font-weight: 400
+      color: #fff
+      margin: 0
+      padding: 40px 0 15px 0
+      border-bottom: 2px solid rgba(255, 255, 255, 0.15)
+      position: relative
+      z-index: 10
+
+    .footer-descript
+      font-family: 'Roboto', sans-serif
+      font-size: 18px
+      font-weight: 400
+      color: #fff
+      width: 50%
+      margin: 0
+      padding: 20px 0 50px 0
+      border-bottom: 2px solid rgba(255, 255, 255, 0.15)
+      position: relative
+      z-index: 10
+
+
+    // _______________ SOME BACKGROUND SHIT ____________________
+
+    #footer-backgr-ball_1
+      width: 80px
+      height: 80px
+      position: absolute
+      top: 310px
+      left: $contentPadding + 60px
+      z-index: 5
+      opacity: 0.45
+      background-image: url("../images/ball_1.png")
+      background-size: cover
+    #footer-backgr-ball_2
+      width: 55px
+      height: 55px
+      position: absolute
+      top: 35px
+      right: $contentPadding + 90px
+      z-index: 5
+      opacity: 0.6
+      background-image: url("../images/ball_2.png")
+      background-size: cover
+    #footer-backgr-triangle
+      width: 478px
+      height: 185px
+      position: absolute
+      bottom: -3px
+      right: 0
+      z-index: 5
+      opacity: 0.6
+      background-image: url("../images/triangle.png")
+      background-size: cover
+
+    .footer-lines-block
+      position: absolute
+      padding: 0 $contentPadding
+      left: 0
+      top: 0
+      height: 525px
+      width: 100%
+      display: flex
+      flex-direction: row
+
+      .footer-line-elem
+        display: flex
+        position: relative
+        height: 100%
+        flex-grow: 3
+        border-left: 2px solid rgba(255, 255, 255, 0.15)
+        margin: 0
+        z-index: 5
+      .footer-line-elem:first-of-type
+        flex-grow: 1
+        border-left: none
+
+    // _______________ APPLICATION WINDOW _______________________
+
+    .footer-calc-window
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: absolute
+      right: 50px
+      top: 55px
+      width: 255px
+      height: 350px
+      border-radius: 6px
+      background-color: #fff
+      box-shadow: 0 2px 7.68px 0.32px rgba(57, 57, 57, 0.25)
+      z-index: 15
+      padding: 40px 20px 15px 20px
+
+      .app-input-block
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-bottom: 18px
+        width: 100%
+
+        .app-input-icon
+          color: $lightText
+          font-size: 14px
+          width: 18px
+          margin-right: 10px
+
+        .app-input
+          display: flex
+          align-items: center
+          background-color: rgba(94, 145, 232, 0.2)
+          padding-left: 15px
+          height: 34px
+          border: none
+          outline: none
+          color: $darkText
+          border-radius: 4px
+
+        #app-descr-input
+          padding: 10px 15px
+          width: 100%
+          resize: none
+          height: 120px
+
+      button.main-color-btn
+        border: none !important
+        outline: none !important
+        &:hover
+          cursor: pointer
+        &:focus
+          border: none !important
+          outline: none !important
+        &:active
+          border: none !important
+          outline: none !important
+
+      #app-success-message
+        display: flex
+        font-family: "Open Sans", sans-serif
+        text-align: center
+        margin-top: 10px
+        padding: 0 20px
+        color: #30bb75
+        font-weight: 600
+        font-size: 12px
+        &.invis
+          display: none
+
+
+

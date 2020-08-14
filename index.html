@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Рассчитайте стоимость сайта. Заказать сайт - от дизайна до хостинга.</title>
+
+  <meta name="description" content="Сколько стоит сайт? - рассчитайте стоимость вашего будущего проекта бесплатно. Создадим сайт с современным дизайном и проработанным интерфейсом, который будет адаптирован под разные устройства.">
+  <meta name="keywords" content="создать сайт пермь, создание сайта пермь, заказать сайт пермь, заказать интернет-магазин пермь,
+                                 сколько стоит сайт в перми, сколько стоит создать сайт, адаптировать сайт под мобильные пермь,
+                                 заказать дизайн сайта пермь, изменить дизайн сайта пермь, редизайн сайта пермь, сменить дизайн сайта пермь">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+  <!--ES Shims-->
+  <script type="text/javascript" src="app/scripts/lib/es5-shim.min.js"></script>
+  <script type="text/javascript" src="app/scripts/lib/es6-shim.min.js"></script>
+
+  <style>
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      height: 100%;
+      width: 100%;
+      z-index: 123123;
+      opacity: 1;
+      transition: opacity 0.5s linear;
+      perspective: 1600px;
+      perspective-origin: 20% 50%;
+    }
+
+    #inner_1 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #inner_2 {
+      display: block;
+      position: relative;
+      left: calc(50% + 25px);
+      top: 50%;
+      width: 75px;
+      height: 75px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color:  #b999f9;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      transform: translate(100px,50px);
+    }
+
+    #preloader.done {
+      opacity: 0;
+    }
+
+    #preloader.hidden {
+      display: none;
+    }
+
+    #inner_2:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #63aeff;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+    }
+
+    #inner_2:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #6de1e0;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+  <!--я.Метрика-->
+  <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(65858260, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true
+      });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/65858260" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <!--Прелоадер-->
+
+  <div id="preloader">
+    <div id="inner_1">
+      <div id="inner_2"></div>
+    </div>
+  </div>
+
+  <!--my-page for mmenu plugin-->
+
+  <div id="my-page">
+    <!--To set menu and content in columns-->
+    <div id="main-flex-wrapper">
+
+      <!--Menu for mobiles and tablets-->
+
+      <a href="" id="mob-trigger-link" class="mob-trigger-button">
+        <span class="mob-button-text">Меню</span>
+        <span class="mob-button-icon fas fa-arrow-right"></span>
+      </a>
+      <!--<div id="mob-btn-side-panel">
+        <div class="mob-button-block">
+
+        </div>
+      </div>-->
+
+      <nav id="my-menu">
+        <div class="main-panel">
+          <div class="back-btn-block">
+            <div class="back-btn-flex-wrapper">
+              <a href="" id="mob-trigger-back-link">
+                <span class="mob-button-text">Назад</span>
+                <span class="mob-button-icon fas fa-arrow-left"></span>
+              </a>
+            </div>
+          </div>
+          <div class="mob-menu-logo-section">
+            <img id="mob-menu-logo-img" src="app/images/logo_text.png" alt="Костыли Студио">
+          </div>
+          <div class="mob-menu-content-section" id="mob-menu-works-section">
+            <h4 class="mob-menu-bold-heading">Наши работы:</h4>
+            <ul class="mob-menu-nav-list">
+              <li data-target="1" class="mob-menu-nav-list-point mob-menu-nav-works-point">
+                <span class="menu-nav-list-text">Интернет-магазин <br> "Гир-авто"</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="2" class="mob-menu-nav-list-point mob-menu-nav-works-point">
+                <span class="menu-nav-list-text">Агентство ООО<br> "Новый взгляд"</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="3" class="mob-menu-nav-list-point mob-menu-nav-works-point">
+                <span class="menu-nav-list-text">Сайт на конкурс <br> "О детстве"</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-content-section" id="mob-menu-nav-section">
+            <ul class="mob-menu-nav-list">
+              <li data-target="guarant-section-heading" class="mob-menu-nav-list-point mob-menu-nav-nav-point">
+                <span class="menu-nav-list-text">Гарантии</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="two-color-heading" class="mob-menu-nav-list-point  mob-menu-nav-nav-point">
+                <span class="menu-nav-list-text">Типы проектов</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="calc-descript-p" class="mob-menu-nav-list-point mob-menu-nav-nav-point">
+                <span class="menu-nav-list-text">Калькулятор <br> стоимости</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="services-section-heading" class="mob-menu-nav-list-point mob-menu-nav-nav-point">
+                <span class="menu-nav-list-text">Другие услуги</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-content-section" id="mob-menu-contacts-section">
+            <h4 class="mob-menu-bold-heading">Контакты</h4>
+            <div class="mob-menu-contacts-block">
+              <span class="mob-menu-contacts-text">web-crutches@inbox.ru</span>
+              <div class="mob-menu-vk-block">
+                <span class="mob-menu-vk-text">Группа Вконтакте:</span>
+                <a target="_blank" href="https://vk.com/web_crutches" class="mob-menu-vk-link">
+                  <span class="fab fa-vk"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <span class="version">Версия 2.3</span>
+        </div>
+      </nav>
+
+      <!--Sidebar background-->
+      <div id="main-menu-layout"></div>
+
+      <!--Sidebar for desktops section-->
+      <nav id="main-menu-section">
+        <div id="main-menu-content">
+          <div class="menu-logo-section">
+            <img id="menu-logo-img" src="app/images/logo_text.png" alt="Костыли Студио">
+          </div>
+          <div class="menu-content-section" id="menu-works-section">
+            <h4 class="menu-bold-heading">Наши работы:</h4>
+            <ul class="menu-nav-list">
+              <li data-target="1" class="menu-nav-list-point menu-nav-works-point">
+                <span class="menu-nav-list-text">Интернет-магазин <br> "Гир-авто"</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="2" class="menu-nav-list-point menu-nav-works-point">
+                <span class="menu-nav-list-text">Агентство ООО<br> "Новый взгляд"</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="3" class="menu-nav-list-point menu-nav-works-point">
+                <span class="menu-nav-list-text">Сайт на конкурс <br> "О детстве"</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-content-section" id="menu-nav-section">
+            <ul class="menu-nav-list">
+              <li data-target="guarant-section-heading" class="menu-nav-list-point menu-nav-nav-point">
+                <span class="menu-nav-list-text">Гарантии</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="two-color-heading" class="menu-nav-list-point  menu-nav-nav-point">
+                <span class="menu-nav-list-text">Типы проектов</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="calc-descript-p" class="menu-nav-list-point menu-nav-nav-point">
+                <span class="menu-nav-list-text">Калькулятор <br> стоимости</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+              <li data-target="services-section-heading" class="menu-nav-list-point menu-nav-nav-point">
+                <span class="menu-nav-list-text">Другие услуги</span>
+                <span class="fas fa-chevron-right menu-nav-list-arrow"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-content-section" id="menu-contacts-section">
+            <h4 class="menu-bold-heading">Контакты</h4>
+            <div class="menu-contacts-block">
+              <span class="menu-contacts-text">web-crutches@inbox.ru</span>
+              <div class="menu-vk-block">
+                <span class="menu-vk-text">Группа Вконтакте:</span>
+                <a target="_blank" href="https://vk.com/web_crutches" class="menu-vk-link">
+                  <span class="fab fa-vk"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <span class="version">Версия 2.3</span>
+        </div>
+        <div class="main-menu-filler"><!--пустой заполнитель, чтобы работал sticky--></div>
+      </nav>
+
+      <div id="all-content-block">
+
+        <!-----   HEADER  -->
+
+        <header class="content-section">
+          <div class="header-content-block content-block">
+
+            <h1 class="header-main-title">Здравствуйте, мы - <br>"КОСТЫЛИ STUDIO"</h1>
+            <h5 class="header-descript">
+              Разработка и дизайн сайтов: от лендингов и визиток до небольших интернет-магазинов. Сделаем современный
+              кроссбраузерный сайт, с использованием актуальных технологий разработки.
+            </h5>
+
+            <!--Some background shit-->
+
+            <div id="header-backgr-ball_1"></div>
+            <div id="header-backgr-ball_2"></div>
+            <div id="header-backgr-triangle"></div>
+
+            <div class="header-lines-block">
+              <div class="header-line-elem"></div>
+              <div class="header-line-elem"></div>
+              <div class="header-line-elem"></div>
+              <div class="header-line-elem"></div>
+              <div class="header-line-elem"></div>
+            </div>
+
+            <!-- That small window wit da button -->
+
+            <div class="calc-window-flex-wrapper">
+              <div class="header-calc-window">
+                <div class="calc-window-top-bar">
+                  <div class="calc-window-icon-block">
+                    <span class="calc-window-icon fas fa-sliders-h"></span>
+                  </div>
+                </div>
+
+                <p class="regular-text calc-window-descript-text">Не знаете с чего начать?
+                  Рассчитайте стоимость
+                  вашего будущего сайта
+                  бесплатно!</p>
+
+                <a class="main-color-btn scroll-btn" href="#" data-target="calc-descript-p">
+                  РАССЧИТАТЬ
+                  <span class="fas fa-arrow-right main-color-btn-arrow"></span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </header>
+
+        <!------  GUARANTEES SECTION -->
+
+        <div id="guarant-section" class="content-section guarant-section">
+          <div class="guarant-content-block content-block">
+            <h2 id="guarant-section-heading" class="guarant-content-title content-title">Что мы гарантируем в работе</h2>
+            <div class="guarant-tabs-block">
+              <div class="tabs-list">
+                <a data-target="#adaptive-text-block" id="adaptive-tab" class="guarant-tab active-tab" href="">
+                  <span class="tab-color-border"></span>
+                  <span class="tab-icon-circle">
+                    <span class="fas fa-desktop tab-icon"></span>
+                  </span>
+                  <span class="tab-text">Адаптивная<br>верстка</span>
+                </a>
+                <a data-target="#cross-text-block" id="cross-tab" class="guarant-tab" href="">
+                  <span class="tab-color-border"></span>
+                  <span class="tab-icon-circle">
+                    <span class="fab fa-internet-explorer tab-icon"></span>
+                  </span>
+                  <span class="tab-text">Кросс-<br>браузерность</span>
+                </a>
+                <a data-target="#design-text-block" id="design-tab" class="guarant-tab" href="">
+                  <span class="tab-color-border"></span>
+                  <span class="tab-icon-circle">
+                    <span class="fas fa-pencil-ruler tab-icon"></span>
+                  </span>
+                  <span class="tab-text">Уникальный<br>дизайн</span>
+                </a>
+                <a data-target="#support-text-block" id="support-tab" class="guarant-tab" href="">
+                  <span class="tab-color-border"></span>
+                  <span class="tab-icon-circle">
+                    <span class="fas fa-comments tab-icon"></span>
+                  </span>
+                  <span class="tab-text">Длительная<br>поддержка</span>
+                </a>
+              </div>
+
+              <div class="guarant-text-block">
+                <div id="adaptive-text-block"  class="guarant-text-section">
+                  <p class="regular-text guarant-text">
+                    Современные тендеции требуют удобства пользования веб-сайтом на всех устройствах. Мы адаптируем
+                    ваши страницы под мобильные и планшеты.
+                  </p>
+                  <img class="adaptive-image" src="app/images/desktop-and-android.png" alt="Адаптивный веб-сайт">
+                </div>
+                <div id="cross-text-block"  class="guarant-text-section">
+                  <p class="regular-text guarant-text">
+                    Мы не допустим, чтобы ваш сайт отображался некорректно в том или ином браузере. Гарантируем
+                    поддержку таких веб-обозревателей, как Firefox, Chrome, Edge, Opera и других.
+                  </p>
+                  <div class="cross-icons-block">
+                    <span class="fab fa-safari cross-icon"></span>
+                    <span class="fab fa-opera cross-icon"></span>
+                    <span class="fab fa-internet-explorer cross-icon"></span>
+                    <span class="fab fa-firefox cross-icon"></span>
+                    <span class="fab fa-chrome cross-icon"></span>
+                    <span class="fab fa-edge cross-icon"></span>
+                  </div>
+                </div>
+                <div id="design-text-block" class="guarant-text-section">
+                  <p class="regular-text guarant-text">
+                    Проанализируем конкурентов, отметим достоинства и недостатки. Разработаем уникальный, современный
+                    дизайн, который будет выделять ваш сайт на фоне других, что позволит вам повысить продажи.
+                  </p>
+                  <div class="design-icons-block">
+                    <img src="app/images/guarant_file_1.png" alt="Версия 1">
+                    <div class="arrow-icon-circle">
+                      <span class="arrow-icon fas fa-chevron-right"></span>
+                    </div>
+                    <img src="app/images/guarant_file_2.png" alt="Версия 2">
+                    <div class="arrow-icon-circle">
+                      <span class="arrow-icon fas fa-chevron-right"></span>
+                    </div>
+                    <img src="app/images/guarant_file_3.png" alt="Версия 3">
+                  </div>
+                </div>
+                <div id="support-text-block" class="guarant-text-section">
+                  <p class="regular-text guarant-text">
+                    Консультируем Вас по вопросам<br>
+                    работы с сайтом в течение двух <br>
+                    месяцев после завершения работы.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------  WORKS SECTION -->
+
+        <div class="content-section works-section">
+          <div class="works-content-block content-block">
+            <h2 id="works-section-heading" class="content-title">Наши работы</h2>
+            <p class="regular-text works-content-descript">
+              Здесь представлено несколько сайтов, которые мы создавали
+              с нуля - от прототипа до постановки на хостинг и регистрации в
+              поисковых системах. Мы - амбициозная команда и готовы к новым вызовам!
+            </p>
+
+            <div class="work-present-block">
+              <div class="work-arrows-block">
+                <div class="work-switch-arrows-wrapper">
+                  <div class="work-switch-arrows">
+                    <div id="work-left-arrow" class="work-arrow-circle" data-target="" >
+                      <span class="fas fa-chevron-left work-arrow-icon"></span>
+                    </div>
+                    <div class="work-arrow-circle" id="work-right-arrow"  data-target="">
+                      <span class="fas fa-chevron-right work-arrow-icon"></span>
+                    </div>
+                  </div>
+                  <span class="work-number">1/3</span>
+                </div>
+                <span class="work-name">Her poka chto</span>
+              </div>
+              <div class="work-images-block">
+                <div class="work-image-wrapper">
+                  <a href="" class="work-image" target="_blank"></a>
+                </div>
+                <div class="work-descript-block">
+                  <div class="work-images-switcher-block">
+                    <div id="images-switcher-left-arrow" class="images-switcher-arrow-wrapper">
+                      <span  class="images-switcher-arrow fas fa-chevron-left"></span>
+                    </div>
+                    <span id="images-switcher-active-image"></span>
+                    <span id="images-switcher-inactive-image"></span>
+                    <div id="images-switcher-right-arrow" class="images-switcher-arrow-wrapper">
+                      <span class="images-switcher-arrow fas fa-chevron-right"></span>
+                    </div>
+                  </div>
+                  <div class="work-text-block">
+                    <img class="work-text-icon" src="" alt="Логотип">
+                    <h4 class="work-text-name">Poka tak</h4>
+                    <p class="work-text-article">
+                      Poka tak poka tak poka tak hmsdfdsfseffaf|Ef|ff|f\f
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!------- CALCULATOR SECTION -->
+
+        <div class="content-section calc-section">
+          <div class="calc-content-block content-block">
+            <h2 id="two-color-heading" class="content-title">Стоимость сайта</h2>
+
+            <!--Two colored blocks-->
+            <div id="two-color-section" class="calc-offers-block">
+              <div id="landing-offer-wrapper" class="calc-offer-wrapper">
+                <div id="landing-offer-title-block" class="calc-offer-title-block">
+                  <h4 class="calc-offer-title">Визитка/<br>Лендинг</h4>
+                </div>
+                <div class="calc-offer-text-block">
+                  <p class="calc-offer-article">
+                    Небольшой сайт на 1-2 страницы. Подойдет для презентации товара или услуги, а также в качестве
+                    вашего первого сайта, который можно быстро запустить.
+                  </p>
+                </div>
+                <ol class="calc-offer-options-list">
+                  <li class="calc-offer-option">Кол-во страниц: 1-2</li>
+                  <li class="calc-offer-option">Индивидуальный дизайн</li>
+                  <li class="calc-offer-option">Домен + хостинг на год</li>
+                </ol>
+                <div class="calc-offer-price-wrapper">
+                  <span class="calc-offer-price">
+                    от 1500₽
+                  </span>
+                  <a href="" class="calc-offer-btn subtle-white-btn scroll-btn" data-target="applictn-block">Заказать</a>
+                </div>
+              </div>
+              <div id="business-offer-wrapper" class="calc-offer-wrapper">
+                <div id="business-offer-title-block" class="calc-offer-title-block">
+                  <h4 class="calc-offer-title">Корпоративный<br>сайт</h4>
+                </div>
+                <div class="calc-offer-text-block">
+                  <p class="calc-offer-article">
+                    Хорошее решение для большой или средней компании. Разместите страницы авторизации, контактов,
+                    фотогалереи и даже каталога товаров.
+                  </p>
+                </div>
+                <ol class="calc-offer-options-list">
+                  <li class="calc-offer-option">Кол-во страниц: 3-10</li>
+                  <li class="calc-offer-option">Дизайн, соответствующий стилю компании</li>
+                  <li class="calc-offer-option">Домен + хостинг на год</li>
+                  <li class="calc-offer-option">Регистрация в поисковых системах</li>
+                </ol>
+                <div class="calc-offer-price-wrapper">
+                  <span class="calc-offer-price">
+                    от 8000₽
+                  </span>
+                  <a href="" class="calc-offer-btn subtle-white-btn scroll-btn" data-target="applictn-block">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <p class="calc-descript-article regular-text" id="calc-descript-p">
+              Вы можете бесплатно рассчитать стоимость вашего будущего сайта с помощью нашего онлайн-калькулятора. Чтобы узнать
+              подробнее об опции, наведите на нее (или зажмите).
+            </p>
+
+            <!--Calculator itself-->
+            <div class="calc-calc-wrapper">
+              <div class="calc-calc-icon-block">
+                <div class="calc-calc-icon-circle">
+                  <span class="fas calc-calc-icon fa-calculator"></span>
+                </div>
+              </div>
+              <div class="calc-calc-options-block">
+                <div id="calc-first-options-side" class="calc-calc-options-side">
+                  <div id="calc-first-options-box" class="calc-calc-options-box">
+                    <h5 class="calc-calc-options-title">Дизайн</h5>
+                    <ul id="calc-design-list" class="calc-calc-options-list">
+                      <li id="indiv-option" class="calc-calc-option">
+                        <span class="active-radio calc-calc-radio"></span>
+                        <span class="calc-calc-option-text">Индивидуальный дизайн</span>
+                      </li>
+                      <li id="pattern-option" class="calc-calc-option">
+                        <span class="calc-calc-radio"></span>
+                        <span class="calc-calc-option-text">По вашему шаблону</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="calc-second-options-box" class="calc-calc-options-box">
+                    <h5 class="calc-calc-options-title">Поддержка</h5>
+                    <ul class="calc-calc-options-list">
+                      <li id="domain-option" class="calc-calc-option calc-calc-optionset-option">
+                        <div id="domain-optionset" class="calc-calc-optionset-wrapper">
+                          <span class="calc-calc-optionset-text">.ru</span>
+                          <span class="optionset-arrow fas fa-chevron-down"></span>
+
+                          <ul class="calc-calc-optionset-list">
+                            <li data-content="1000" class="optionset-list-option">.com</li>
+                            <li data-content="100" class="optionset-list-option">.ru</li>
+                            <li data-content="100" class="optionset-list-option">.рф</li>
+                            <li data-content="600" class="optionset-list-option">.su</li>
+                            <li data-content="1000" class="optionset-list-option">.net</li>
+                            <li data-content="1000" class="optionset-list-option">.biz</li>
+                            <li data-content="1000" class="optionset-list-option">.info</li>
+                            <li data-content="1000" class="optionset-list-option">.org</li>
+                          </ul>
+                        </div>
+                        Доменная зона
+                      </li>
+                      <li class="calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Регистрация в поисковых системах <br> Yandex, Google, Mail.ru</span>
+                      </li>
+                      <li id="hosting-option" class="calc-calc-option calc-calc-sum-option tooltip" title="Обслуживание вашего сайта в течение месяца">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Подключение хостинга на месяц</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="calc-dev-options-block" class="calc-calc-options-side">
+                  <div id="calc-third-options-box" class="calc-calc-options-box">
+                    <h5 class="calc-calc-options-title">Разработка</h5>
+                    <ul class="calc-calc-options-list">
+                      <li id="pages-num-option" class="calc-calc-optionset-option calc-calc-option">
+                        <div id="pages-num-optionset" class="calc-calc-optionset-wrapper">
+                          <span class="calc-calc-optionset-text">1</span>
+                          <span class="optionset-arrow fas fa-chevron-down"></span>
+
+                          <ul class="calc-calc-optionset-list">
+                            <li class="optionset-list-option">1</li>
+                            <li class="optionset-list-option">2</li>
+                            <li class="optionset-list-option">3</li>
+                            <li class="optionset-list-option">4</li>
+                            <li class="optionset-list-option">5</li>
+                            <li class="optionset-list-option">6</li>
+                            <li class="optionset-list-option">7</li>
+                            <li class="optionset-list-option">8+</li>
+                          </ul>
+                        </div>
+                        Кол-во страниц
+                      </li>
+                      <li id="interact-option" class="tooltip calc-calc-option calc-calc-sum-option calc-calc-optionset-option" title="Разделы комментариев, отзывы, системы лайков и т.п.">
+                        <div id="interact-optionset" class="calc-calc-optionset-wrapper">
+                          <span class="calc-calc-optionset-text">0</span>
+                          <span class="optionset-arrow fas fa-chevron-down"></span>
+
+                          <ul class="calc-calc-optionset-list">
+                            <li class="optionset-list-option">0</li>
+                            <li class="optionset-list-option">1</li>
+                            <li class="optionset-list-option">2</li>
+                            <li class="optionset-list-option">3</li>
+                            <li class="optionset-list-option">4</li>
+                            <li class="optionset-list-option">5</li>
+                          </ul>
+                        </div>
+                        Элементы взаимодействия пользователей
+                      </li>
+                      <li id="adaptive-option" title="Обеспечивает удобство пользования сайтом на разных устройствах" class="tooltip calc-calc-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Адаптировать под мобильные и планшеты</span>
+                      </li>
+                      <li id="sophist-elems-option" title="Карусели, слайдеры, параллакс-эффекты и т.п." class="tooltip calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Сложные элементы верстки</span>
+                      </li>
+                      <li id="content-fill-option" class="calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Наполнение страниц материалами заказчика</span>
+                      </li>
+                      <li id="auth-page-option" title="Система авторизации" class="tooltip calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Личный кабинет</span>
+                      </li>
+                      <li id="anim-option" class="calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Анимационные эффекты</span>
+
+                      </li>
+                      <li id="counter-option" class="calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Установка счетчика Яндекс.Метрика</span>
+                      </li>
+                      <li id="video-option" class="calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Вставка видео</span>
+                      </li>
+                      <li id="audio-option" class="calc-calc-option calc-calc-sum-option">
+                        <span class="calc-calc-checkbox">
+                          <span class="calc-check fas fa-check"></span>
+                        </span>
+                        <span class="calc-calc-option-text">Аудиоплеер</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-calc-price-block">
+                <div class="calc-calc-total-price-block">
+                  <span class="calc-calc-text">Рассчитанная стоимость:</span>
+                  <span class="calc-calc-price">0 ₽</span>
+                </div>
+                <div class="calc-calc-domain-price-block">
+                  +
+                  <span class="calc-calc-domain-price">
+                    0
+                  </span>
+                   за домен и хостинг
+                </div>
+              </div>
+              <div class="calc-calc-btn-block">
+                <a href="" class="subtle-white-btn scroll-btn" data-target="applictn-block">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------- OTHER SERVICES -->
+
+        <div id="services-section" class="content-section services-section">
+          <div class="content-block services-content-block">
+            <h2 id="services-section-heading" class="content-title">Другие услуги</h2>
+
+            <div class="services-tabs-wrapper">
+              <div id="services-first-tab-block" class="services-tab-block">
+                <div class="services-tab">
+                  <div class="services-tab-title-block">
+                    <span class="services-tab-icon-circle">
+                      <span class="services-tab-icon fas fa-pencil-ruler"></span>
+                    </span>
+                    <h4 class="services-tab-title">Дизайн <br> сайта</h4>
+                  </div>
+                  <div class="services-tab-text-block">
+                    <p class="services-tab-article regular-text">
+                      Проанализируем страницы конкурентов, учтем ваши пожелания.
+                      Вы можете выбрать цветовую тему из каталога. Итог: .psd файлы макетов для разных устройств.
+                    </p>
+                  </div>
+                  <div class="services-tab-btn-block">
+                    <a href="" class="subtle-white-btn scroll-btn" data-target="applictn-block">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+              <div id="services-second-tab-block" class="services-tab-block">
+                <div class="services-tab">
+                  <div class="services-tab-title-block">
+                    <span class="services-tab-icon-circle">
+                      <span class="services-tab-icon fas fa-code"></span>
+                    </span>
+                    <h4 class="services-tab-title">Верстка по <br> шаблону</h4>
+                  </div>
+                  <div class="services-tab-text-block">
+                    <p class="services-tab-article regular-text">
+                      Сверстаем сайт любой сложности по вашему psd или sketch шаблону. Мы можем отправить
+                      вам исходные файлы проекта или же сразу установить его на хостинг.
+                    </p>
+                  </div>
+                  <div class="services-tab-btn-block">
+                    <a href="" class="subtle-white-btn scroll-btn" data-target="applictn-block">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+              <div id="services-third-tab-block" class="services-tab-block">
+                <div class="services-tab">
+                  <div class="services-tab-title-block">
+                    <span class="services-tab-icon-circle">
+                      <span class="services-tab-icon fas fa-mobile-alt"></span>
+                    </span>
+                    <h4 class="services-tab-title">Адаптация под<br> мобильные</h4>
+                  </div>
+                  <div class="services-tab-text-block">
+                    <p class="services-tab-article regular-text">
+                      Если ваш сайт плохо отображается на мобильных и планшетах, мы разработаем дизайн под эти
+                      разрешения и «перенесем» ваш сайт на эти устройства.
+                    </p>
+                  </div>
+                  <div class="services-tab-btn-block">
+                    <a href="" class="subtle-white-btn scroll-btn" data-target="applictn-block">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------- FOOTER-->
+
+        <footer class="content-section footer-section">
+          <div class="footer-content-block content-block" id="applictn-block">
+
+            <h1 class="footer-main-title">Оставить заявку</h1>
+            <h5 class="footer-descript">
+              Желаете заказать у нас проект? Вы можете бесплатно проконсультироваться или оставить заявку на одну
+              из услуг, мы ответим вам в ближайшее время. (не забудьте посмотреть письмо в папке "спам")
+            </h5>
+
+            <!--Some background shit-->
+
+            <div id="footer-backgr-ball_1"></div>
+            <div id="footer-backgr-ball_2"></div>
+
+            <div class="footer-lines-block">
+              <div class="footer-line-elem"></div>
+              <div class="footer-line-elem"></div>
+              <div class="footer-line-elem"></div>
+              <div class="footer-line-elem"></div>
+              <div class="footer-line-elem"></div>
+            </div>
+
+            <!-- Application window -->
+
+            <form id="application-form" name="application" class="footer-calc-window">
+              <span class="app-name-block app-input-block">
+                <span class="app-input-icon fas fa-font"></span>
+                <input id="app-name-data" name="app-name-data" type="text" maxlength="60" required placeholder="Ваше имя" class="app-input">
+              </span>
+              <span class="app-email-block app-input-block">
+                <span class="app-input-icon fas fa-envelope"></span>
+                <input id="app-mail-data" name="app-mail-data" type="email" maxlength="60" required placeholder="Ваш email" class="app-input">
+              </span>
+              <span class="app-descript-block app-input-block">
+                <span class="app-input-icon"></span>
+                <textarea name="app-descr-data" id="app-descr-input" rows="6" cols="15" maxlength="600" required placeholder="Кратко опишите услугу(-и)" class="app-input"></textarea>
+              </span>
+
+              <button id="app-submit-btn" class="main-color-btn" name="app-submit" form="application-form" type="submit">
+                ОТПРАВИТЬ
+                <span class="fas fa-arrow-right main-color-btn-arrow"></span>
+              </button>
+
+              <span class="invis" id="app-success-message">Успешно: мы приняли вашу заявку</span>
+            </form>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <!--LIBRARIES-->
+
+  <link rel="stylesheet" href="app/css/libs.min.css">
+  <link rel="stylesheet" href="app/css/app.css">
+  <script data-main="app/scripts/app.js" src="app/scripts/require.js"></script>
+
+</body>
+</html>

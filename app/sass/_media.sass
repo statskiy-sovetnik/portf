@@ -1,0 +1,830 @@
+@import "vars"
+
+//корочн нахуй я тут ебался с ориентацией, проще было бы просто по возрастанию экранов идти
+
+
+// ____ Маленькие телефоны (типа Iphone 5s) _________________
+
+@media all and (max-width: 360px)
+
+  header
+    .header-content-block
+      .header-main-title
+        font-size: 38px !important
+
+  .guarant-section
+    .arrow-icon-circle
+      margin: 0 10px !important
+
+
+// _____ Телефоны и маленькие планшеты (портретная ориентация)  ______________
+
+@media all and (orientation: portrait)
+
+  html, body
+    overflow-x: hidden !important
+
+  #mob-trigger-link
+    display: flex !important
+
+  #main-menu-layout
+    display: none !important
+
+  #main-menu-section
+    display: none !important
+
+  #all-content-block
+    position: relative !important
+    width: 100vw !important
+
+  .content-section
+    .content-block
+      width: calc(100vw - 30px - 30px) !important
+      padding-left: 30px !important
+      padding-right: 30px !important
+
+  header
+    height: 750px !important
+
+    .header-content-block
+      height: 750px !important
+
+      .header-main-title
+        padding-top: 130px !important
+
+      .header-descript
+        width: 100% !important
+
+      .header-lines-block
+        padding: 0 30px !important
+        height: 750px !important
+        width: calc(100vw - 30px * 2) !important
+
+
+  .guarant-section
+    padding-top: 230px !important
+
+    .guarant-tabs-block
+      flex-direction: column !important
+      align-items: center !important
+      .tabs-list
+        padding-left: 0 !important
+      .guarant-text-block
+        padding: 25px 0 75px !important
+        width: 100% !important
+
+        .guarant-text-section
+          width: 100% !important
+
+          .guarant-text
+            width: 100% !important
+            text-align: center !important
+
+          .cross-icons-block
+            justify-content: center !important
+            flex-wrap: wrap !important
+            .cross-icon
+              margin-bottom: 15px !important
+
+          .design-icons-block
+            justify-content: center !important
+
+
+  .works-section
+    padding-top: 50px !important
+
+    .works-content-descript
+      width: 100% !important
+
+    .work-present-block
+      .work-arrows-block
+        flex-direction: column !important
+        .work-switch-arrows-wrapper
+          margin-bottom: 10px !important
+
+      .work-images-block
+        flex-direction: column !important
+        margin-top: 15px !important
+        .work-image-wrapper
+          order: 1 !important
+          justify-content: center !important
+
+        .work-descript-block
+          padding-left: 0 !important
+          .work-text-block
+            padding: 0 0 30px !important
+          .work-images-switcher-block
+            order: 1 !important
+
+  .calc-section
+    .calc-content-block
+      padding-top: 100px !important
+
+      .calc-offers-block
+        flex-direction: column !important
+        height: auto !important
+
+        .calc-offer-wrapper
+          width: 100% !important
+          border-radius: 8px !important
+          height: auto !important
+          margin-bottom: 40px !important
+
+          .calc-offer-title-block
+            border-radius: 8px 8px 0 0 !important
+
+          .calc-offer-price-wrapper
+            .calc-offer-btn
+              opacity: 1 !important
+
+            .calc-offer-price
+              margin: 20px 0 15px !important
+              top: 0 !important
+
+          &:hover
+            box-shadow: none !important
+
+            .calc-offer-price
+              top: 0 !important
+
+      .calc-descript-article
+        width: 100% !important
+        text-align: center
+        margin: 70px 0 50px !important
+
+      //Сам калькулятор
+      .calc-calc-options-block
+        align-items: center !important
+        flex-direction: column !important
+        height: auto !important
+
+        .calc-calc-options-box
+          margin-bottom: 20px !important
+
+          .calc-calc-options-list
+            padding-left: 0 !important
+
+        .calc-calc-options-side
+          padding: 0 !important
+
+      .calc-calc-price-block
+        padding: 20px 30px !important
+        align-items: flex-start !important
+
+        .calc-calc-total-price-block
+          flex-direction: column !important
+          text-align: left !important
+          .calc-calc-price
+            margin-left: 0 !important
+
+      .calc-calc-btn-block
+        justify-content: center
+
+
+  .services-section
+    .services-tabs-wrapper
+      flex-direction: column !important
+      height: auto !important
+
+      .services-tab-block
+        justify-content: center !important
+        margin-bottom: 30px !important
+        padding: 0 10vw !important
+
+        .services-tab
+          height: auto !important
+          width: 100% !important
+
+  .footer-section
+    height: auto !important
+
+    .footer-content-block
+      height: auto !important
+      padding: 0 30px 50px !important
+      .footer-descript
+        width: 100% !important
+
+      #application-form
+        position: relative !important
+        width: auto !important
+        top: 0 !important
+        right: 0 !important
+        height: auto !important
+
+      .footer-lines-block
+        padding: 0 30px !important
+        height: 100% !important
+
+
+
+// ________ Планшеты с портретной ориентацией ____________________
+
+@media all and (orientation: portrait) and (min-width: 650px)
+
+  $tabletContentPadding: 50px
+
+  .content-section
+    .content-block
+      width: calc(100vw - #{$tabletContentPadding * 2}) !important
+      padding-left: $tabletContentPadding !important
+      padding-right: $tabletContentPadding !important
+
+  header
+    height: 600px !important
+    .header-content-block
+      height: 600px !important
+      .header-descript
+        width: 80% !important
+
+  .guarant-section
+    .guarant-tabs-block
+      flex-direction: row !important
+
+      .guarant-text-block
+        padding: 0 0 0 50px !important
+        .guarant-text-section
+          .guarant-text
+            width: 75% !important
+            text-align: left !important
+          .adaptive-image
+            width: 75% !important
+
+          .cross-icons-block
+            flex-wrap: wrap !important
+            .cross-icon
+              margin-bottom: 15px !important
+
+          .design-icons-block
+            .arrow-icon-circle
+              margin: 0 7px !important
+
+  .works-section
+    padding-top: 80px !important
+
+    .works-content-descript
+      width: 80% !important
+
+    .work-present-block
+      .work-arrows-block
+        flex-direction: row !important
+        .work-switch-arrows-wrapper
+          margin-bottom: 0 !important
+
+      .work-images-block
+        .work-image-wrapper
+          justify-content: center !important
+        .work-descript-block
+          .work-text-block
+            padding: 0 0 30px !important
+          .work-images-switcher-block
+            order: 1 !important
+
+  .calc-section
+    .calc-content-block
+      .calc-offers-block
+        .calc-offer-wrapper
+          width: 60% !important
+
+      #calc-descript-p
+        text-align: left !important
+
+      //Сам калькулятор
+      .calc-calc-options-block
+        #calc-first-options-side
+          flex-direction: row !important
+          #calc-first-options-box
+            margin-right: 20px !important
+
+      .calc-calc-price-block
+        align-items: center !important
+
+        .calc-calc-total-price-block
+          flex-direction: row !important
+          align-items: center !important
+          text-align: center !important
+          .calc-calc-price
+            margin-left: 15px !important
+
+  .services-section
+    .services-tabs-wrapper
+      flex-wrap: wrap
+      flex-direction: row !important
+
+      .services-tab-block
+        padding: 0 2vw !important
+
+        .services-tab
+          width: 27vw !important
+          //min-width: 200px !important
+
+  .footer-section
+    .footer-content-block
+      .footer-descript
+        width: 80% !important
+
+      #application-form
+        width: 70% !important
+        margin: 0 auto !important
+
+
+
+// ________ Планшеты с портретной ориентацией и высоким разрешением ___________
+
+@media all and (orientation: portrait) and (min-width: 900px)
+  $sideMenuWidth: 205px
+  $largeTabletPadding: 50px
+
+
+  #mob-trigger-link
+    display: none !important
+
+  #main-menu-layout
+    display: flex !important
+
+  #main-menu-section
+    display: flex !important
+
+  #all-content-block
+    width: calc(100vw - #{$sideMenuWidth}) !important
+    position: static !important
+
+  .content-section
+    .content-block
+      width: calc(100% - #{$largeTabletPadding}*2) !important
+
+  header
+    .header-content-block
+      .header-main-title
+        padding-top: 100px !important
+
+      .header-lines-block
+        width: calc(100vw - #{$largeTabletPadding} * 2) !important
+        height: 600px !important
+
+  .guarant-section
+    .guarant-tabs-block
+      .guarant-text-block
+        padding: 0 0 0 50px !important
+        .guarant-text-section
+          .guarant-text
+            width: 100% !important
+          .adaptive-image
+            width: 85% !important
+
+          .design-icons-block
+            .arrow-icon-circle
+              margin: 0 10px !important
+
+  .calc-section
+    .calc-content-block
+      .calc-offers-block
+        flex-direction: row !important
+        height: 520px !important
+
+        .calc-offer-wrapper
+          height: 100% !important
+          margin: 0 !important
+
+          #landing-offer-title-block
+            border-radius: 8px 0 0 0 !important
+
+          #business-offer-title-block
+            border-radius: 0 8px 0 0 !important
+
+          &:hover
+            .calc-offer-article
+              margin-bottom: 30px !important
+
+        #landing-offer-wrapper
+          border-radius: 8px 8px 0 8px !important
+
+        #business-offer-wrapper
+          border-radius: 8px 8px 8px 0 !important
+
+
+
+// _________ Телефоны с альбомной ориентацией ________________________
+
+
+@media all and (orientation: landscape) and (max-width: 899px)
+  $albumContentPadding: 30px
+
+  #mob-trigger-link
+    display: flex !important
+
+  #main-menu-layout
+    display: none !important
+
+  #main-menu-section
+    display: none !important
+
+  #all-content-block
+    position: relative !important
+    width: 100vw !important
+
+  .content-section
+    .content-block
+      width: calc(100vw - #{$albumContentPadding} * 2) !important
+      padding-left: $albumContentPadding !important
+      padding-right: $albumContentPadding !important
+
+  header
+    height: 600px !important
+    .header-content-block
+      height: 600px !important
+      .header-main-title
+        padding-top: 150px !important
+      .header-descript
+        width: 80% !important
+
+      .header-lines-block
+        height: 600px !important
+
+
+  .guarant-section
+    .guarant-tabs-block
+      .guarant-text-block
+        padding: 25px 0 35px 30px !important
+        width: 100% !important
+
+        .guarant-text-section
+          width: 100% !important
+
+          .guarant-text
+            width: 90% !important
+            text-align: left !important
+
+          .adaptive-image
+            width: 85% !important
+
+          .cross-icons-block
+            justify-content: center !important
+            flex-wrap: wrap !important
+            .cross-icon
+              margin-bottom: 15px !important
+
+          .design-icons-block
+            justify-content: center !important
+            .arrow-icon-circle
+              margin: 0 8px !important
+
+
+  .works-section
+    .works-content-descript
+      width: 70% !important
+
+    .work-present-block
+      .work-arrows-block
+        flex-direction: column !important
+        .work-switch-arrows-wrapper
+          margin-bottom: 10px !important
+
+      .work-images-block
+        flex-direction: column !important
+        margin-top: 15px !important
+        .work-image-wrapper
+          order: 1 !important
+          justify-content: center !important
+
+        .work-descript-block
+          padding-left: 0 !important
+          .work-text-block
+            padding: 0 0 30px !important
+          .work-images-switcher-block
+            order: 1 !important
+
+  .calc-section
+    .calc-content-block
+      padding-top: 100px !important
+
+      .calc-offers-block
+        flex-direction: row !important
+        height: 540px !important
+
+        .calc-offer-wrapper
+          height: 100% !important
+          margin: 0 !important
+
+          .calc-offer-price-wrapper
+            .calc-offer-btn
+              opacity: 1 !important
+
+            .calc-offer-price
+              margin: 20px 0 15px !important
+              top: 0 !important
+
+          #landing-offer-title-block
+            border-radius: 8px 0 0 0 !important
+
+          #business-offer-title-block
+            border-radius: 0 8px 0 0 !important
+
+          &:hover
+            box-shadow: none !important
+            .calc-offer-price
+              top: 0 !important
+            .calc-offer-article
+              margin-bottom: 30px !important
+
+        #landing-offer-wrapper
+          border-radius: 8px 8px 0 8px !important
+
+        #business-offer-wrapper
+          border-radius: 8px 8px 8px 0 !important
+
+
+      .calc-descript-article
+        width: 80% !important
+        text-align: left !important
+        margin: 70px 0 50px !important
+
+      //Сам калькулятор
+      .calc-calc-options-block
+        align-items: center !important
+        flex-direction: column !important
+        height: auto !important
+
+        .calc-calc-options-box
+          margin-bottom: 20px !important
+
+          .calc-calc-options-list
+            padding-left: 0 !important
+
+        .calc-calc-options-side
+          padding: 0 !important
+
+        #calc-first-options-side
+          flex-direction: row !important
+          #calc-first-options-box
+            margin-right: 20px !important
+
+      .calc-calc-price-block
+        padding: 20px 30px !important
+        align-items: center !important
+
+        .calc-calc-total-price-block
+          flex-direction: row !important
+          align-items: center !important
+          text-align: center !important
+          .calc-calc-price
+            margin-left: 15px !important
+
+
+      .calc-calc-btn-block
+        justify-content: center
+
+  .services-section
+    .services-tabs-wrapper
+      flex-wrap: wrap
+      flex-direction: row !important
+      height: auto !important
+
+      .services-tab-block
+        justify-content: center !important
+        padding: 0 2vw !important
+        margin-bottom: 30px !important
+
+        .services-tab
+          height: auto !important
+          width: 27vw !important
+
+  .footer-section
+    height: auto !important
+
+    .footer-content-block
+      height: auto !important
+      padding: 0 30px 50px !important
+      .footer-descript
+        width: 70% !important
+
+      #application-form
+        position: relative !important
+        width: 70% !important
+        top: 0 !important
+        right: 0 !important
+        height: auto !important
+        margin: 0 auto !important
+
+      .footer-lines-block
+        padding: 0 30px !important
+        height: 100% !important
+
+
+
+// __________ Планшеты в альбомной и некоторые мониторы __________________
+
+@media all and (orientation: landscape) and (min-width: 900px)
+
+  $padding: 50px
+  $sideMenuPadding: 205px
+
+  #mob-trigger-link
+    display: none !important
+
+  #main-menu-layout
+    display: flex !important
+
+  #main-menu-section
+    display: flex !important
+
+  #all-content-block
+    position: static !important
+    width: calc(100vw - #{$sideMenuPadding}) !important
+
+  .content-section
+    .content-block
+      width: calc(100% - #{$padding} * 2) !important
+      padding-left: $padding !important
+      padding-right: $padding !important
+
+  header
+    height: 570px !important
+    .header-content-block
+      height: 570px !important
+      .header-main-title
+        padding-top: 100px !important
+
+      .header-lines-block
+        height: 570px !important
+
+  .guarant-section
+    padding-top: 230px !important
+    .guarant-tabs-block
+      .guarant-text-block
+        padding: 25px 0 35px 30px !important
+        width: 100% !important
+
+        .guarant-text-section
+          width: 100% !important
+
+          .guarant-text
+            width: 90% !important
+            text-align: left !important
+
+          .adaptive-image
+            width: 75% !important
+
+          .cross-icons-block
+            justify-content: center !important
+            flex-wrap: wrap !important
+            .cross-icon
+              margin-bottom: 15px !important
+
+          .design-icons-block
+            justify-content: center !important
+            .arrow-icon-circle
+              margin: 0 8px !important
+
+  .works-section
+    .works-content-descript
+      width: 70% !important
+
+    .work-present-block
+      .work-arrows-block
+        flex-direction: row !important
+        .work-switch-arrows-wrapper
+          margin-bottom: 0 !important
+
+      .work-images-block
+        flex-direction: column !important
+        margin-top: 15px !important
+        .work-image-wrapper
+          order: 1 !important
+          justify-content: center !important
+
+        .work-descript-block
+          padding-left: 0 !important
+          .work-text-block
+            padding: 0 0 30px !important
+          .work-images-switcher-block
+            order: 1 !important
+
+  .services-section
+    .services-tabs-wrapper
+      flex-wrap: wrap !important
+      flex-direction: row !important
+      height: auto !important
+
+      .services-tab-block
+        justify-content: center !important
+        padding: 0 1.5vw !important
+        margin-bottom: 30px !important
+
+        .services-tab
+          height: auto !important
+          width: 23vw !important
+
+
+
+// _____ Более-менее большие устройства (планшеты в альбомном и мониторы) ________________
+
+@media all and (min-width: 1120px)
+  $contentPadding: 50px
+
+  #main-flex-wrapper
+    justify-content: center !important
+
+  #all-content-block
+    width: auto !important
+
+  .content-section
+    width: 819px !important
+    .content-block
+      width: calc(100% - #{$contentPadding} * 2) !important
+
+  .guarant-section
+    .guarant-tabs-block
+      .guarant-text-block
+        .guarant-text-section
+          .adaptive-image
+            width: 205px !important
+
+  .calc-section
+    .calc-offers-block
+      flex-direction: row !important
+      height: 540px !important
+
+      .calc-offer-wrapper
+        height: 100% !important
+        margin: 0 !important
+
+        .calc-offer-price-wrapper
+          .calc-offer-btn
+            opacity: 1 !important
+
+          .calc-offer-price
+            margin: 20px 0 15px !important
+            top: 0 !important
+
+        #landing-offer-title-block
+          border-radius: 8px 0 0 0 !important
+
+        #business-offer-title-block
+          border-radius: 0 8px 0 0 !important
+
+        &:hover
+          box-shadow: none !important
+          .calc-offer-price
+            top: 0 !important
+          .calc-offer-article
+            margin-bottom: 30px !important
+
+      #landing-offer-wrapper
+        border-radius: 8px 8px 0 8px !important
+
+      #business-offer-wrapper
+        border-radius: 8px 8px 8px 0 !important
+
+    .calc-calc-options-block
+      align-items: center !important
+      flex-direction: row !important
+      height: 380px !important
+
+      .calc-calc-options-box
+        margin-bottom: 20px !important
+
+        .calc-calc-options-list
+          padding-left: 0 !important
+
+      .calc-calc-options-side
+        height: 100%
+
+        &:nth-of-type(1)
+          padding-right: 13px !important
+          flex-direction: column !important
+        &:nth-of-type(2)
+          padding-left: 13px
+
+
+    .calc-calc-price-block
+      padding: 20px 30px !important
+      align-items: flex-end !important
+
+      .calc-calc-total-price-block
+        flex-direction: row !important
+        text-align: left !important
+        .calc-calc-text
+          display: flex !important
+          align-items: center !important
+        .calc-calc-price
+          margin-left: 15px !important
+
+
+  .services-section
+    .services-tabs-wrapper
+      flex-wrap: nowrap !important
+      flex-direction: row !important
+      height: 400px !important
+
+      .services-tab-block
+        justify-content: center !important
+        padding: 0 20px !important
+        margin-bottom: 0 !important
+        height: 100% !important
+
+        .services-tab
+          height: auto !important
+          width: auto !important
+
+
+

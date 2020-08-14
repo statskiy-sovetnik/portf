@@ -1,0 +1,294 @@
+@import "vars"
+
+#my-menu
+  .mm-panel
+    display: flex
+    flex-direction: column
+
+    .mm-navbar
+      display: none
+
+    .back-btn-block
+      padding: 10px 20px 0
+      .back-btn-flex-wrapper
+        display: flex
+        justify-content: flex-start
+        #mob-trigger-back-link
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+
+          .mob-button-text
+            text-transform: uppercase
+            font-family: "Open Sans", sans-serif
+            font-weight: 600
+            color: #9d9d9d
+            font-size: 14px
+            margin-bottom: 2px
+
+          .mob-button-icon
+            color: #898989
+
+    .mob-menu-logo-section
+      display: flex
+      justify-content: center
+      padding: 20px
+
+      #mob-menu-logo-img
+        width: 40%
+
+    .mob-menu-content-section
+      padding: 25px
+      margin: 0
+      border-top: 1px solid #dadada
+
+      .mob-menu-contacts-block
+        display: flex
+        flex-direction: column
+        .mob-menu-contacts-text
+          font-size: 13px
+          font-family: "Open Sans", sans-serif
+          color: #939393
+        .mob-menu-vk-block
+          display: flex
+          flex-direction: row
+          align-items: center
+          .mob-menu-vk-text
+            font-size: 11px
+            font-family: "Open Sans", sans-serif
+            color: #b2b2b2
+            margin-right: 5px
+          .mob-menu-vk-link
+            padding: 6px
+            border-radius: 6px
+            border: 1px solid transparent
+            transition: border 0.1s linear
+            span
+              font-size: 15px
+              color: #4d7198
+            &:hover
+              border: 1px solid #4d7198
+
+
+    .version
+      text-align: center
+      width: 100%
+      margin: 60px 0 0
+      font-size: 9px
+      font-family: "Roboto", sans-serif
+      color: #b1b1b1
+    //Списки (два раза есть)
+    .mob-menu-nav-list
+      padding: 0
+      margin: 0
+      .mob-menu-nav-list-point
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        font-family: "Open Sans", sans-serif
+        padding: 10px 0
+
+        &:hover, &:active
+          cursor: pointer
+
+          .menu-nav-list-arrow
+            left: 8px
+            color: $mainBlue
+
+          .menu-nav-list-text
+            color: $mainBlue
+
+
+        .menu-nav-list-text
+          color: #a8a8a8
+          font-size: 13px
+          font-weight: 600
+          text-transform: uppercase
+          transition: color 0.2s linear
+
+        .menu-nav-list-arrow
+          font-size: 12px
+          position: relative
+          left: 0
+          color: #8c8c8c
+          transition: left 0.15s linear, color 0.2s linear
+
+
+  //Жирный заголовок:
+  .mob-menu-bold-heading
+    text-transform: uppercase
+    color: black
+    font-weight: 700
+    font-family: "Open Sans", sans-serif
+    font-size: 13px
+    margin-top: 0
+
+//#mob-btn-side-panel
+  position: relative
+  display: none
+  flex-direction: column
+  //box-shadow: 1px 0 10px 0 rgba(57, 57, 57, 0.15)
+  background-color: transparent
+  //padding: 30px $sideMenuPadding
+
+  .mob-button-block
+    width: 100%
+
+#mob-trigger-link
+  display: none
+  position: fixed
+  z-index: 50
+  left: calc(#{$sideMenuPadding} - 23px)
+  top: 5vh
+  background-color: #fff
+  box-shadow: 1px 0 10px 0 rgba(57, 57, 57, 0.15)
+  border-radius: 12px
+  padding: 7px
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  .mob-button-text
+    text-transform: uppercase
+    font-family: "Open Sans", sans-serif
+    font-weight: 600
+    color: #9d9d9d
+    font-size: 14px
+    margin-bottom: 5px
+    position: relative
+    z-index: 50
+
+  .mob-button-icon
+    color: #898989
+    position: relative
+    z-index: 50
+
+#main-menu-layout
+  display: flex
+  z-index: 10
+  background-color: #fff
+  height: 100%
+  flex-grow: 1
+
+#main-menu-section
+  z-index: 5
+  background-color: #fff
+  box-shadow: 1px 0 10px 0 rgba(57, 57, 57, 0.15)
+  width: 205px
+  padding: 0
+  display: flex
+  flex-direction: column
+
+  //Жирный заголовок:
+  .menu-bold-heading
+    text-transform: uppercase
+    color: black
+    font-weight: 700
+    font-family: "Roboto", sans-serif
+    font-size: 13px
+    margin-top: 0
+
+  //Списки (два раза есть)
+  .menu-nav-list
+    padding: 0
+    margin: 0
+    .menu-nav-list-point
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      font-family: "Open Sans", sans-serif
+      padding: 10px 0
+
+      &:hover
+        cursor: pointer
+
+        .menu-nav-list-arrow
+          left: 8px
+          color: $mainBlue
+
+        .menu-nav-list-text
+          color: $mainBlue
+
+
+      .menu-nav-list-text
+        color: #a8a8a8
+        font-size: 13px
+        font-weight: 600
+        text-transform: uppercase
+        transition: color 0.2s linear
+
+      .menu-nav-list-arrow
+        font-size: 12px
+        position: relative
+        left: 0
+        color: #8c8c8c
+        transition: left 0.15s linear, color 0.2s linear
+
+
+  //Элемент для фиксации
+  #main-menu-content
+    position: sticky
+    width: 205px
+    bottom: 0
+
+    .menu-logo-section
+      display: flex
+      justify-content: center
+      padding: 30px 20px
+
+      #menu-logo-img
+        width: 100%
+
+
+    .menu-content-section
+      padding: 25px
+      margin: 0
+      border-top: 1px solid #dadada
+
+      .menu-contacts-block
+        display: flex
+        flex-direction: column
+        .menu-contacts-text
+          font-size: 13px
+          font-family: "Open Sans", sans-serif
+          color: #939393
+        .menu-vk-block
+          display: flex
+          flex-direction: row
+          align-items: center
+          .menu-vk-text
+            font-size: 11px
+            font-family: "Open Sans", sans-serif
+            color: #b2b2b2
+            margin-right: 5px
+          .menu-vk-link
+            padding: 6px
+            border-radius: 6px
+            border: 1px solid transparent
+            transition: border 0.1s linear
+            span
+              font-size: 15px
+              color: #4d7198
+            &:hover
+              border: 1px solid #4d7198
+
+    .version
+      text-align: center
+      width: 100%
+      margin: 60px 25px 0
+      font-size: 9px
+      font-family: "Roboto", sans-serif
+      color: #b1b1b1
+
+
+  .main-menu-filler
+    height: 300px
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+@import "vars"
+
+.guarant-section
+  padding-top: 275px
+
+  .guarant-content-block
+
+
+    .guarant-tabs-block
+      display: flex
+      width: 100%
+      flex-direction: row
+
+      .tabs-list
+        display: flex
+        flex-direction: column
+        padding-left: 50px
+
+        .guarant-tab
+          position: relative
+          left: 0
+          display: flex
+          flex-direction: row
+          align-items: center
+          border-radius: 6px
+          width: 240px
+          height: 80px
+          background-color: #fff
+          box-shadow: 0 2px 4px 1px rgba(79, 79, 79, 0.25)
+          margin-bottom: 20px
+          transition: left 0.3s ease-out
+
+          .tab-color-border
+            position: absolute
+            top: 0
+            left: 0
+            border-radius: 6px 0 0 6px
+            background: linear-gradient(0, #88e1ce 0%, #669ce4 100%)
+            height: 100%
+            width: 15px
+            transition: width 0.3s ease-out
+
+          .tab-text
+            font-family: 'Roboto', sans-serif
+            font-size: 18px
+            font-weight: 500
+            color: $lightText
+
+          .tab-icon-circle
+            width: 45px
+            height: 45px
+            position: relative
+            z-index: 5
+            border-radius: 100%
+            background-color: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 20px 0 17px
+
+            .tab-icon
+              color: $darkText
+              width: 25px
+              height: auto
+
+          &.active-tab
+            left: 5px
+            .tab-text
+              color: $mainBlue
+            .tab-color-border
+              width: 39px
+
+          &:focus
+            outline: none
+            border: none
+            left: 5px
+            .tab-text
+              color: $mainBlue
+            .tab-color-border
+              width: 39px
+
+      .guarant-text-block
+        display: flex
+        align-items: center
+        padding: 25px 0 25px 75px
+
+        .guarant-text
+          font-size: 18px !important
+          margin: 0
+          width: 380px
+
+        #adaptive-text-block
+          display: flex
+          flex-direction: column
+          flex-grow: 1
+
+          .adaptive-image
+            margin: 35px auto 0
+            width: 250px
+
+        #cross-text-block, #design-text-block, #support-text-block
+          display: none
+        #cross-text-block
+          flex-direction: column
+          flex-grow: 1
+
+          .cross-icons-block
+            display: flex
+            flex-direction: row
+            margin-top: 35px
+
+            .cross-icon
+              font-size: 40px
+              color: $lightText
+              margin-right: 25px
+        #design-text-block
+          flex-direction: column
+          flex-grow: 1
+
+          .design-icons-block
+            margin-top: 35px
+            display: flex
+            flex-direction: row
+            align-items: center
+
+            .arrow-icon-circle
+              margin: 0 30px
+              background-color: rgba(130, 194, 213, 0.3)
+              width: 30px
+              height: 30px
+              display: flex
+              justify-content: center
+              align-items: center
+              border-radius: 100%
+
+              .arrow-icon
+                font-size: 13px
+                color: #95c0e4
+
+
+
+
